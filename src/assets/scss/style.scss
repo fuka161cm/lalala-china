@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+$key_color: #ed0c0c;
+
+.v-enter-active, .v-leave-active {
+  transition: opacity .5s;
+}
+
+.v-enter, .v-leave-to {
+  opacity: 0;
+}
+
+a {
+  color: $key_color;
+}
+
+.article {
+  border-bottom: 1px solid #d0d0d0;
+  padding: 30px 10px;
+  @media screen and (min-width:1024px) {
+    padding: 100px 0;
+  }
+  a {
+    text-decoration: underline;
+  }
+}
+
+body {
+  font-family: "Hiragino Maru Gothic ProN", verdana,"Helvetica Neue";
+}
+
+.child-content {
+  padding-top: 60px;
+}
+
+.wrapper {
+  @media screen and (min-width:1024px) {
+    margin: 0 auto;
+    width: 1060px;
+  }
+}
+
+.hero-image {
+  background-image: url(./assets/images/top/hero-image_01.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  @media screen and (min-width:1024px) {
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-top: 100px;
+    height: 750px;
+  }
+}
+
+
+.title {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.navbar {
+  background-color: transparent;
+  &-burger {
+    color: $key_color;
+    &:hover {
+      background: transparent;
+      color:$key_color;
+    }
+    span {
+      height: 2px;
+    }
+  }
+  &-brand {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  &-menu {
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 100vh;
+    font-size: 200%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    @media screen and (min-width:1024px) {
+      text-align: right;
+      font-size: 100%;
+      height: auto;
+    }
+  }
+  &-start {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    @media screen and (min-width:1024px) {
+      position: relative;
+      top: auto;
+      left: auto;
+      transform: none;
+    }
+  }
+}
+
+a {
+  &.navbar-item {
+    &:hover {
+      background-color: transparent;
+      color: inherit;
+      @media screen and (min-width:1024px) {
+        color: $key_color;
+      }
+    }
+  }
+}
+
+.news {
+  &-item {
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+.style-book {
+  &-item {
+    margin-top: 10px;
+    @media screen and (min-width:1024px) {
+      margin-top: 30px;
+    }
+    img {
+      display: block;
+    }
+  }
+}
+
+.product-list {
+  margin-top: 40px;
+  &-item {
+    &-title {
+      font-size: 110%;
+      font-weight: 600;
+      &:before {
+        content: "";
+        display: inline-block;
+        background-image: url(./assets/images/common/illust/lalala_china_01.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 20px;
+        margin-right: 5px;
+        width: 20px;
+      }
+    }
+    &-image {
+      display: flex;
+      flex: wrap;
+      justify-content: space-between;
+      margin-top: 10px;
+      img {
+        width: 49%;
+      }
+    }
+  }
+}
+
+.title {
+  &.is-2 {
+    @media screen and (min-width:1024px) {
+      font-size: 400%;
+    }
+  }
+}
+
+.link {
+  display: block;
+  position: relative;
+  @media screen and (min-width:1024px) {
+    display: block;
+    height: 700px;
+    overflow: hidden;
+    &:hover {
+      img {
+      filter: blur(3px);
+      }
+    }
+  }
+  .icon-link {
+    background-color: rgba(255, 255, 255, .6);
+    border-radius: 50%;
+    color: $key_color;
+    height: auto;
+    padding: 5px;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: auto;
+    z-index: 20;
+    @media screen and (min-width:1024px) {
+      font-size: 30px;
+      padding: 20px;
+    }
+  }
+}
+
+.profile {
+  @media screen and (min-width:1024px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      width: 60%;
+    }
+  }
+
+}
+
+.to_top {
+  background-image: url(./assets/images/common/illust/to_top.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 20px;
+  display: inline-block;
+  height: 60px;
+  position: fixed;
+  right: 10px;
+  width: 60px;
+}
+.footer {
+  font-size: 80%;
+  padding: 10px 50px 20px 10px;
+}

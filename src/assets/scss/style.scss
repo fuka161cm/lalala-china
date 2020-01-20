@@ -55,7 +55,6 @@ body {
   }
 }
 
-
 .title {
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -152,11 +151,13 @@ a {
       }
     }
     &-image {
+      align-items: flex-start;
       display: flex;
-      flex: wrap;
+      flex-wrap: wrap;
       justify-content: space-between;
       margin-top: 10px;
       img {
+        height: auto;
         width: 49%;
       }
     }
@@ -212,7 +213,6 @@ a {
       width: 60%;
     }
   }
-
 }
 
 .to_top {
@@ -225,7 +225,15 @@ a {
   position: fixed;
   right: 10px;
   width: 60px;
+  z-index: 100;
+  @media screen and (min-width:1024px) {
+    bottom: 20px;
+    height: 100px;
+    right: 60px;
+    width: 100px;
+  }
 }
+
 .footer {
   font-size: 80%;
   padding: 10px 50px 20px 10px;

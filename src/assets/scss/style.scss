@@ -12,6 +12,10 @@ $key_color: #ed0c0c;
 
 a {
   color: $key_color;
+  &:hover {
+    color: $key_color;
+    opacity: 0.7;
+  }
 }
 
 .article {
@@ -26,7 +30,13 @@ a {
 }
 
 body {
-  font-family: "Hiragino Maru Gothic ProN", verdana,"Helvetica Neue";
+  font-family: "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN",sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  @media screen and (min-width:1024px) {
+    font-size: 24px;
+  }
+
 }
 
 .child-content {
@@ -36,22 +46,24 @@ body {
 .wrapper {
   @media screen and (min-width:1024px) {
     margin: 0 auto;
-    width: 1060px;
+    width: 1160px;
   }
 }
 
-.hero-image {
-  background-image: url(./assets/images/top/hero-image_01.jpg);
-  background-size: cover;
-  background-position: center center;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-  @media screen and (min-width:1024px) {
-    background-repeat: no-repeat;
-    background-position: top center;
-    margin-top: 100px;
-    height: 750px;
+.hero {
+  &-image {
+    background-image: url(./assets/images/top/hero-image_01.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    @media screen and (min-width:1024px) {
+      background-repeat: no-repeat;
+      background-position: top 10% center;
+      margin-top: 50px;
+      height: 90vh;
+    }
   }
 }
 
@@ -64,8 +76,8 @@ body {
   &-burger {
     color: $key_color;
     &:hover {
-      background: transparent;
-      color:$key_color;
+      background-color: transparent;
+      color: $key_color;
     }
     span {
       height: 2px;
@@ -77,7 +89,7 @@ body {
   &-menu {
     background-color: rgba(255, 255, 255, 0.6);
     height: 100vh;
-    font-size: 200%;
+    font-size: 120%;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
     text-align: center;
@@ -114,18 +126,45 @@ a {
 }
 
 .news {
+  &-image {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px 0;
+    img {
+      height: auto;
+      width: 49%;
+    }
+  }
   &-item {
     a {
-      text-decoration: underline;
+      text-decoration: underline; 
+    }
+  }
+  &-info{
+    margin: 60px 0;
+    &-second {
+      margin-top: 50px;
+      p {
+        margin: 20px 0 50px;;
+      }
+    }
+    &-top{
+      border-bottom: 1px solid #4a4a4a;
+      p {
+        margin: 10px 0  30px;
+      }
+      
     }
   }
 }
 
-.style-book {
+.main-article {
   &-item {
     margin-top: 10px;
     @media screen and (min-width:1024px) {
-      margin-top: 30px;
+      margin-top: 80px;
     }
     img {
       display: block;
@@ -133,32 +172,74 @@ a {
   }
 }
 
-.product-list {
-  margin-top: 40px;
-  &-item {
-    &-title {
-      font-size: 110%;
-      font-weight: 600;
-      &:before {
-        content: "";
-        display: inline-block;
-        background-image: url(./assets/images/common/illust/lalala_china_01.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 20px;
-        margin-right: 5px;
-        width: 20px;
+.product {
+  &-hero {
+    &-image {
+      img {
+      margin-bottom: 50px;
       }
     }
-    &-image {
-      align-items: flex-start;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-top: 10px;
+  }
+  &-list {
+    &-item {
       img {
-        height: auto;
-        width: 49%;
+        margin-bottom: 40px;
+        @media screen and (min-width:1024px) {
+          width: 60%;
+        }
+      }
+      text-align: center;
+      &-caption {
+        &-height {
+          font-size: 90%;
+        }
+        p {
+          margin: 30px 0 30px;
+        }
+        &-small {
+          padding-bottom: 30px;
+          font-size: 90%;
+          p {
+            margin-bottom: 10px;
+          }
+        }
+      }
+      &-title {
+        font-size: 120%;
+        text-decoration: underline;
+      }
+      &-image {
+        &-bottom {
+          margin-bottom: 40px;
+        }
+      }
+      &-png {
+        img {
+          height: auto;
+          width: 70%;
+          @media screen and (min-width:1024px) {
+            width: 50%;
+          }
+        }
+        margin: 50px 0 80px;
+      }
+      &-text {
+        align-items: flex-start;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 10px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+.top {
+  &-news{
+    &-item {
+      @media screen and (min-width:1024px) {
+        font-size: 25px;
       }
     }
   }
@@ -176,35 +257,39 @@ a {
   display: block;
   position: relative;
   @media screen and (min-width:1024px) {
-    display: block;
-    height: 700px;
     overflow: hidden;
-    &:hover {
+    &-imgWrap {
+      display: block;
+      height: 700px;
+      transition-duration: 0.5s;
       img {
-      filter: blur(3px);
+        display: block;
+      }
+      &:hover {
+        transform: scale(1.06);	
+        transition-duration: 1s;
       }
     }
   }
-  .icon-link {
-    background-color: rgba(255, 255, 255, .6);
-    border-radius: 50%;
-    color: $key_color;
+  .icon-arrow {
     height: auto;
     padding: 5px;
-    font-size: 20px;
     position: absolute;
-    top: 50%;
+    top: 85%;
     right: 10px;
-    width: auto;
+    width: 40%;
     z-index: 20;
+    opacity: 0.8;
     @media screen and (min-width:1024px) {
-      font-size: 30px;
-      padding: 20px;
+      display: none;
     }
   }
 }
 
 .profile {
+  img {
+    width: 50%;
+  }
   @media screen and (min-width:1024px) {
     display: flex;
     align-items: center;

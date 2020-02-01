@@ -30,7 +30,17 @@
         <li class="style-book-item">
             <img src="../../assets/images/lookbook/muraya/09.jpg" alt="">
         </li>
+        <li class="style-book-item">
+            <img src="../../assets/images/lookbook/muraya/10.jpg" alt="">
+        </li>
+        <li class="style-book-item">
+            <img src="../../assets/images/lookbook/muraya/11.jpg" alt="">
+        </li>
+        <li class="style-book-item">
+            <img src="../../assets/images/lookbook/muraya/12.jpg" alt="">
+        </li>
       </ul>
+      <small>Shooting location：Muraya</small>
   </article>
   </div>
 </template>

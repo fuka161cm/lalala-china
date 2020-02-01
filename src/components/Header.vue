@@ -23,9 +23,13 @@
 
         <div class="navbar-menu" :class="{ 'is-active': isActive }">
           <div class="navbar-start">
-            <router-link  @click.native="closeNav()" class="navbar-item" to="/">Home</router-link>
-            <router-link  @click.native="closeNav()" class="navbar-item" to="/news">News</router-link>
-            <router-link  @click.native="closeNav()" class="navbar-item" to="/product">Product</router-link>
+            <router-link  @click.native="closeNav()" class="navbar-item" to="/">HOME</router-link>
+            <router-link  @click.native="closeNav()" class="navbar-item" to="/news">NEWS</router-link>
+            <router-link  @click.native="closeNav()" class="navbar-item" to="/product01">China-shirt(short)</router-link>
+            <router-link  @click.native="closeNav()" class="navbar-item" to="/product02">China-shirt(long)</router-link>
+            <router-link  @click.native="closeNav()" class="navbar-item" to="/product03">China-long-shirt</router-link>
+            <router-link  @click.native="closeNav()" class="navbar-item" to="/look-book/tiger">LOOKBOOK-01</router-link>
+            <router-link  @click.native="closeNav()" class="navbar-item" to="/look-book/muraya">LOOKBOOK-02</router-link>
           </div>
         </div>
       </nav>

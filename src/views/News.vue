@@ -7,7 +7,7 @@
         <img src="../assets/images/news/2020-img02.jpg" alt="">
      </div>
       <div class="news-info-top">
-        <h3 class="title is-3">2020.2.21-2.22<br>『スーパーチャイナ at 壬生モクレン』</h3>
+        <h3>2020.2.21-2.22<br>『スーパーチャイナ at 壬生モクレン』</h3>
         <p>
           ・日時：2020.2.21(金)-2.22(土) 13:00-23:00<br>
           ・場所 : 壬生モクレン<br>

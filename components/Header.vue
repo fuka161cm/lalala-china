@@ -25,8 +25,8 @@
           <div class="navbar-start">
             <nuxt-link  @click.native="closeNav()" class="navbar-item" to="/">Home</nuxt-link>
             <nuxt-link  @click.native="closeNav()" class="navbar-item" to="/news">News</nuxt-link>
-            <nuxt-link  @click.native="closeNav()" class="navbar-item" to="/gallery">Gallery</nuxt-link>
             <nuxt-link  @click.native="closeNav()" class="navbar-item" to="/lookbooks">Look-Book</nuxt-link>
+            <nuxt-link  @click.native="closeNav()" class="navbar-item" to="/gallery">Gallery</nuxt-link>
             <nuxt-link  @click.native="closeNav()" class="navbar-item" to="/about">About</nuxt-link>
           </div>
         </div>

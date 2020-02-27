@@ -2,40 +2,27 @@
   <div>
     <div class="hero-image"></div>
     <article class="article">
-      <h2 class="title is-2">NEWS</h2>
-      <ul class="top-news">
-        <li class="top-news-item">
-          <nuxt-link to="/news">2020.02.21-22<br>『スーパーチャイナ at 壬生モクレン』に参加します。</nuxt-link>
-        </li>
-      </ul>
+      <h3 class="title">News</h3>
+      <div class="top-news-item">
+        <nuxt-link to="/news" class="link">
+        2020.2.23 『スーパーチャイナ at 壬生モクレン』に参加しました。 
+        </nuxt-link>
+      </div>
     </article>
-
     <article class="article">
-      <h2 class="title is-2">LOOK BOOK</h2>
-      <ul class="main-article">
-        <li class="main-article-item">
-          <nuxt-link to="/lookbook/tiger" class="link">
-          <div class="link-imgWrap">
-            <img src="../assets/images/top/style-book_01.jpg" alt="">
-          </div>
+      <h3 class="title">Look-Book</h3>
+      <div class="top-lookbooks-contents">
+        <div class="top-lookbooks-btn">
+          <nuxt-link to="/lookbook/portrait" class="link">
+            <img src="../assets/images/lookbook/btn/portrait-btn.jpg" alt="">
           </nuxt-link>
-        </li>
-        <li class="main-article-item">
-          <nuxt-link to="/lookbook/muraya"  class="link">
-          <div class="link-imgWrap">
-           <img src="../assets/images/top/style-book_02.jpg" alt="">
-          </div>
-          </nuxt-link>
-        </li>
-      </ul>
+        </div>
+        <nuxt-link to="/lookbooks" class="link-more">More</nuxt-link>
+      </div>
     </article>
   </div>
 </template>
         
-
-
-
-
 <script>
 // @ is an alias to /src
 

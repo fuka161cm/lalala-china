@@ -1,10 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:200i&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Sawarabi+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
 
 $key_color: #ed0c0c;
 $basic_color: #4A4A4A;
 
-//general/////
+//general
+* {
+  font-family: 'Varela Round', sans-serif, 'Helvetica Neue' , Helvetica;
+  p {
+    font-size: 14px;
+    line-height: 1.7em;
+    @media screen and (min-width:1024px) {
+      line-height: 2em;
+    }
+  }
+}
 .article {
   padding: 30px 10px;
   border-bottom: 1px solid #666666;
@@ -14,20 +23,22 @@ $basic_color: #4A4A4A;
   }
   a {
     color: $basic_color;
-    font-style: italic;
+    // font-style: italic;
     transition: all 0.7s ease;
     &:hover {
-      text-decoration: underline;
+      transition: all 0.7s ease;
     }
-    img:hover {
-      opacity: 0.7;
-      transition: all 0.5s ease;
-      transition-property: opacity;
+    img{
+      transition: all 0.7s ease;
+      &:hover {
+        transition: all 0.5s ease;
+      }
     }
   }
 }
 
 .article h2.title {
+  font-family: 'Varela Round', sans-serif, 'Helvetica Neue' , Helvetica;
   text-align: center;
   font-size: 300%;
   margin: 10px 0 100px;
@@ -37,49 +48,17 @@ $basic_color: #4A4A4A;
   }
 }
 
-h2.title.is-3.home-heading {
-  text-align: left;
-}
-
-body {
-  font-family: 'Sawarabi Gothic', sans-serif;
-  p {
-    font-size: 14px;
-    line-height: 1.5em;
-    @media screen and (min-width:1024px) {
-      font-feature-setting: "palt" 1;
-      font-size: 16px;
-      line-height: 2em;
-    }
-  }
-}
-
 .child-content {
   padding-top: 50px;
   @media screen and (min-width:1024px) {
   }
   p {
-    padding: 17px;
+    padding: 15px;
   }
 }
 
 .title {
-  font-family: 'Montserrat', sans-serif;
-}
-
-.link {
-  display: block;
-  position: relative;
-  @media screen and (min-width:1024px) {
-    overflow: hidden;
-    &-imgWrap {
-      display: block;
-      height: 500px;
-      img {
-        display: block;
-      }
-    }
-  }
+  font-family: 'Varela Round', sans-serif, 'Helvetica Neue' , Helvetica;
 }
 
 .page-enter-active, .page-leave-active {
@@ -92,23 +71,34 @@ body {
 .wrapper {
   @media screen and (min-width:1024px) {
     margin: 0 auto;
-    width: 1160px;
+    width: 1000px;
   }
 }
 
 // header/////
-header .is-fixed-top {
+header .navbar.is-fixed-top {
   background-color: rgba(255, 255, 255, 0.6);
+  @media screen and (min-width:1024px) {
+    display: flex;
+  }
 }
 
 header .navbar-item img {
   @media screen and (min-width:1024px) {
-  max-height: 50px;
-  padding-left: 200px;
+  max-height: 30px;
   }
 }
 
 .navbar {
+  //常に表示
+  &-brand {
+    background-color: rgba(255, 255, 255, 0.6);
+    margin-left: auto;
+    flex-grow: 1;
+    position: relative;
+  }
+ 
+  //ハンバーガーメニュ
   &-burger {
     &.burger {
       background-color: transparent;
@@ -120,23 +110,27 @@ header .navbar-item img {
         height: 2px;
       }
     } 
-    &:hover {
-      color: $key_color;
+    &:active {
+      background-color: transparent;
     }
   }
-  &-brand {
-    background-color: rgba(255, 255, 255, 0.6);
+  &-item {
+    font-family: 'Varela Round', sans-serif, 'Helvetica Neue' , Helvetica;
+    @media screen and (min-width:1024px) {
+      position: absolute;
+      left: 25%;
+    }
   }
+  //PC表示
   &-menu {
     background-color: rgba(255, 255, 255, 0.6);
     height: 100vh;
     font-size: 120%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Varela Round', sans-serif, 'Helvetica Neue' , Helvetica;
     font-weight: 600;
     text-align: center;
     @media screen and (min-width:1024px) {
-      text-align: right;
-      font-size: 100%;
+      font-size: 90%;
       height: auto;
     }
     &.is-active {
@@ -150,11 +144,21 @@ header .navbar-item img {
     transform: translateY(-50%) translateX(-50%);
     @media screen and (min-width:1024px) {
       top: auto;
-      right: auto;
+      right: 30%;
       transform: none;
     }
     a {
       &.navbar-item {
+        font-family: 'Varela Round', sans-serif, 'Helvetica Neue' , Helvetica ;
+        @media screen and (min-width:1024px) {
+          font-size: 90%;
+        }
+        &:active {
+          @media screen and (min-width:1024px) {
+            background-color: transparent;
+            color: $key_color;
+          }
+        }
         &:hover {
           background-color: transparent;
           color: $key_color;
@@ -170,31 +174,10 @@ header .navbar-item img {
 
 .navbar-item {
   @media screen and (min-width:1024px) {
-    margin: 40px 20px;
+    margin: 20px 20px;
   }
   &.nuxt-link-exact-active {
     color: $key_color;
-  }
-}
-
-a {
-  &.navbar-item {
-    @media screen and (min-width:1024px) {
-      font-size: 110%;
-    }
-    &:active {
-      @media screen and (min-width:1024px) {
-        background-color: transparent;
-        color: $key_color;
-      }
-    }
-    &:hover {
-      background-color: transparent;
-      color: inherit;
-      @media screen and (min-width:1024px) {
-        color: $key_color;
-      }
-    }
   }
 }
 
@@ -211,8 +194,8 @@ a {
       background-repeat: no-repeat;
       background-position: top 10% center;
       margin: 200px 0 0;
-      height: 900px;
-      width: 1160px;
+      height: 800px;
+      width: 1000px;
     }
   }
 }
@@ -221,7 +204,10 @@ a {
   &-news{
     &-item {
       @media screen and (min-width:1024px) {
-        font-size: 120%;
+        font-size: 110%;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -230,13 +216,18 @@ a {
       margin-bottom: 20px;
       @media screen and (min-width:1024px) {
         margin-bottom: 40px;
+        transition: all 0.7s ease;
+        &:hover {
+          opacity: 0.7;
+          transition: all 0.5s ease;
+        }
       }
     }
     &-contents {
       text-align: center;
       .link {
         &-more {
-          padding: 10px 150px;
+          padding: 10px 80px;
           border: 1px solid $basic_color;
           @media screen and (min-width:1024px) {
             padding: 15px 300px;
@@ -307,12 +298,9 @@ h3.title.sub-title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 30px;
-  .link {
-    color: $basic_color;
-    &:hover {
-      color: $basic_color;
-    }
+  margin-bottom: 70px;
+  a.link.title {
+    font-size: 80%;
   }
 }
 
@@ -338,11 +326,10 @@ p.item-length {
 .li-container {  
   display: flex;
   align-items: center;
-  &:hover {
-    text-decoration: underline;
+  h3 {
+    font-size: 90%;
   }
 }
-
 
 // Look-Book/////
 .lookbooks {
@@ -358,20 +345,18 @@ p.item-length {
     }
   }
   &-table {
-    margin: 50px 0;
+    margin-top: 50px;
     @media screen and (min-width:1024px) {
-      margin: 50px 0 ;
       display: flex;
+      justify-content: space-between;
+      a.link {
+        margin: 10px;
+      }
     }
-    &-btn {
-      @media screen and (min-width:1024px) {
-        padding:10px;
-      }
-      h3  {
-        text-align: center;
-        margin: 10px 0 30px;
-        font-size: 200%;
-      }
+    h3.title {
+      text-align: center;
+      margin: 10px 0 30px;
+      font-size: 200%;
     }
   }
 }
@@ -393,10 +378,10 @@ p.item-length {
       text-align: center;
     }
     p {
-      padding: 16px;
+      padding: 12px;
     }
     @media screen and (min-width:1024px) {
-      width: 30%;
+      width: 29%;
       margin: 18px;
     }
   }
@@ -486,6 +471,7 @@ article .lookbooks {
   &-content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     a {
       color: $key_color;
       font-style: italic;
@@ -499,13 +485,13 @@ article .lookbooks {
       margin-bottom: 10px;
     }
     .mailto {
-      margin-top: 10px;
+      margin: 10px 0;
+      width: 100%;
       a {
         border: 1px solid $key_color;
         border-radius: 50px;
         padding: 10px 20px;
         text-align: center;
-        width: 50%;
       }
     }
   }
@@ -514,8 +500,8 @@ article .lookbooks {
 // News 
 .news {
   &-image {
-    align-items: flex-start;
     display: flex;
+    align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 30px 0;
@@ -525,19 +511,22 @@ article .lookbooks {
       margin-bottom: 15px;
     }
     &-w2 {
-      display:flex;
-      width: 50%;
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 30px 0;
       img {
-        padding: 3px;
+        align-items: flex-start;
+        width: 49%;
       }
       @media screen and (min-width:1024px) {
-        width: 30%;
+        width: 60%;
         margin: 30px 0;
         img {
           padding-right: 10px;
         }
       }
-
     }
   }
   &-info{
@@ -561,24 +550,6 @@ article .lookbooks {
 }
 
 // footer 
-  .to_top {
-    background-image: url(../images/common/illust/to_top.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    bottom: 20px;
-    display: inline-block;
-    height: 60px;
-    position: fixed;
-    right: 10px;
-    width: 60px;
-    z-index: 100;
-    @media screen and (min-width:1024px) {
-      bottom: 20px;
-      height: 100px;
-      right: 60px;
-      width: 100px;
-    }
-  }
 footer.footer {
   font-size: 80%;
   text-align: center;

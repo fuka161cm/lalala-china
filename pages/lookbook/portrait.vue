@@ -1,7 +1,7 @@
 <template>
   <div class="child-content">
     <article class="article">
-      <h2 class="title is-2 sub-title">portrait</h2>
+      <h2 class="title is-2 sub-title">Portrait</h2>
       <div class="lookbook">
         <div class="lookbook look-block">
             <div class="look-item">
@@ -53,13 +53,13 @@
     </article>
     <article class="article">
         <div class="lookbooks-table">
-            <div class="lookbooks-table-btn">
+            <div class="lookbooks-btn">
                 <nuxt-link to="/lookbook/noon" class="link">
                     <img src="../../assets/images/lookbook/btn/noon-btn.jpg" alt="">
                     <h3 class="title">Noon</h3>
                 </nuxt-link>
             </div>
-            <div class="lookbooks-table-btn">
+            <div class="lookbooks-btn">
             <nuxt-link to="/lookbook/night" class="link">
                     <img src="../../assets/images/lookbook/btn/night-btn.jpg" alt="">
                     <h3 class="title">Night</h3>
@@ -69,3 +69,14 @@
    </article>
   </div>
 </template>
+
+<script>
+  export default {
+    name: "portrait",
+    head() {
+      return {
+        title: 'Portrait || Look-Book ||'
+      }
+    }
+  }
+</script>

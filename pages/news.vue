@@ -1,7 +1,7 @@
 <template>
   <div class="child-content">
     <article class="article">
-      <h2 class="title">NEWS</h2>
+      <h2 class="title">News</h2>
      <div class="news-image">
         <img src="../assets/images/news/2020-02/01.jpg" alt="">
         <img src="../assets/images/news/2020-02/02.jpg" alt="">
@@ -32,8 +32,14 @@
     </article>
   </div>
 </template>
-          
 
-            
-
-    
+<script>
+  export default {
+    name: "news",
+    head() {
+      return {
+        title: 'News ||'
+      }
+    }
+  }
+</script>

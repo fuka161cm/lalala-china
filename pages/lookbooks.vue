@@ -25,3 +25,14 @@
     </article>
   </div>
 </template>
+
+<script>
+  export default {
+    name: "lookbook",
+    head() {
+      return {
+        title: 'Look-Book ||'
+      }
+    }
+  }
+</script>

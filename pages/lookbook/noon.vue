@@ -39,13 +39,13 @@
     </article>
    <article class="article">
         <div class="lookbooks-table">
-            <div class="lookbooks-table-btn">
+            <div class="lookbooks-btn">
                 <nuxt-link to="/lookbook/portrait" class="link">
                     <img src="../../assets/images/lookbook/btn/portrait-btn.jpg" alt="">
                     <h3 class="title">Portrait</h3>
                 </nuxt-link>
             </div>
-            <div class="lookbooks-table-btn">
+            <div class="lookbooks-btn">
             <nuxt-link to="/lookbook/night" class="link">
                     <img src="../../assets/images/lookbook/btn/night-btn.jpg" alt="">
                     <h3 class="title">Night</h3>
@@ -55,3 +55,14 @@
    </article>
   </div>
 </template>
+
+<script>
+  export default {
+    name: "noon",
+    head() {
+      return {
+        title: 'Noon || Look-book ||'
+      }
+    }
+  }
+</script>

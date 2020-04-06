@@ -7,19 +7,7 @@
           <li class="title is-4">
             <div class="li-container">
               <div class="line"></div>
-              <nuxt-link to="#china-shirt-short" class="link">China-shirt(short)</nuxt-link>
-            </div>
-          </li>
-          <li class="title is-4">
-            <div class="li-container">
-              <div class="line"></div>
-              <nuxt-link to="#china-shirt-long" class="link">China-shirt(long)</nuxt-link>
-            </div>
-          </li>
-          <li class="title is-4">
-            <div class="li-container">
-              <div class="line"></div>
-              <nuxt-link to="#china-shirt-long" class="link">China-long-shirt</nuxt-link>
+              <h3 class="title">China-shirt(short)</h3>
             </div>
           </li>
         </ul>
@@ -34,13 +22,16 @@
       </div>
       <p class="item-length">着丈53cm / 袖丈60cm</p>
     </article>
-    <article class="article">
-      <h3 class="title sub-title" id="china-shirt-short">China-shirt(long)</h3>
-      <p class="item-length">準備中...</p>
-    </article>
-    <article class="article">
-      <h3 class="title sub-title" id="china-shirt-short">China-long-shirt</h3>
-       <p class="item-length">準備中...</p>
-    </article>
   </div>
 </template>
+
+<script>
+  export default {
+    name: "gallery",
+    head() {
+      return {
+        title: 'Gallery ||'
+      }
+    }
+  }
+</script>

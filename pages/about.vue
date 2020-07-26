@@ -66,7 +66,7 @@
     name: "about",
     head() {
       return {
-        title: 'About ||'
+        title: 'About /'
       }
     }
   }

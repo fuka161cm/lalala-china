@@ -96,7 +96,7 @@
     name: "night",
     head() {
       return {
-        title: 'Night || Look-book ||'
+        title: 'Night / Look-book /'
       }
     }
   }

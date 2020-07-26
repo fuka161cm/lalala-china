@@ -2,10 +2,11 @@
 
 $key_color: #ed0c0c;
 $basic_color: #4A4A4A;
+$basic_font: 'Varela Round', sans-serif, 'Helvetica Neue', Helvetica;
 
 //general
 * {
-  font-family: 'Varela Round', sans-serif, 'Helvetica Neue' , Helvetica;
+  font-family: $basic_font;
   p {
     font-size: 14px;
     line-height: 1.7em;
@@ -14,21 +15,21 @@ $basic_color: #4A4A4A;
     }
   }
 }
+
 .article {
   padding: 30px 10px;
   border-bottom: 1px solid #666666;
   @media screen and (min-width:1024px) {
     line-height: 220%;
-    padding: 100px 0;
+    padding: 100px 0 40px;
   }
   a {
     color: $basic_color;
-    // font-style: italic;
     transition: all 0.7s ease;
     &:hover {
       transition: all 0.7s ease;
     }
-    img{
+    img {
       transition: all 0.7s ease;
       &:hover {
         transition: all 0.5s ease;
@@ -38,10 +39,10 @@ $basic_color: #4A4A4A;
 }
 
 .article h2.title {
-  font-family: 'Varela Round', sans-serif, 'Helvetica Neue' , Helvetica;
+  font-family: $basic_font;
   text-align: center;
   font-size: 300%;
-  margin: 10px 0 100px;
+  margin: 10px 0 80px;
   @media screen and (min-width:1024px) {
     margin: 20px 0 80px;
     font-size: 450%;
@@ -50,20 +51,20 @@ $basic_color: #4A4A4A;
 
 .child-content {
   padding-top: 50px;
-  @media screen and (min-width:1024px) {
-  }
-  p {
-    padding: 15px;
-  }
 }
 
-.title {
-  font-family: 'Varela Round', sans-serif, 'Helvetica Neue' , Helvetica;
+h3.title.sub-title {
+  text-align: center;
+  margin: 20px 0 40px;
+  @media screen and (min-width:1024px) {
+    margin-bottom: 80px;
+  }
 }
 
 .page-enter-active, .page-leave-active {
   transition: opacity .5s;
 }
+
 .page-enter, .page-leave-active {
   opacity: 0;
 }
@@ -115,18 +116,18 @@ header .navbar-item img {
     }
   }
   &-item {
-    font-family: 'Varela Round', sans-serif, 'Helvetica Neue' , Helvetica;
+    font-family: $basic_font;
     @media screen and (min-width:1024px) {
       position: absolute;
       left: 25%;
     }
   }
+
   //PC表示
   &-menu {
     background-color: rgba(255, 255, 255, 0.6);
     height: 100vh;
     font-size: 120%;
-    font-family: 'Varela Round', sans-serif, 'Helvetica Neue' , Helvetica;
     font-weight: 600;
     text-align: center;
     @media screen and (min-width:1024px) {
@@ -149,7 +150,6 @@ header .navbar-item img {
     }
     a {
       &.navbar-item {
-        font-family: 'Varela Round', sans-serif, 'Helvetica Neue' , Helvetica ;
         @media screen and (min-width:1024px) {
           font-size: 90%;
         }
@@ -268,17 +268,13 @@ header .navbar-item img {
 
 // gallery
 article .thumbnail {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  @media screen and (min-width:1024px) {
-    max-width: 1160px;
-  }
   &-item {
-    flex: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     img {
       padding: 5px;
-      width: 175px;
+      width: 300px;
       @media screen and (min-width:1024px) {
         width: 300px;
       }
@@ -286,23 +282,7 @@ article .thumbnail {
   }
 }
 
-h3.title.sub-title {
-  text-align: center;
-  margin: 20px 0 40px;
-  @media screen and (min-width:1024px) {
-    margin-bottom: 80px;
-  }
-}
 
-.gallery-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 70px;
-  a.link.title {
-    font-size: 80%;
-  }
-}
 
 p.item-length {
   text-align: center;
@@ -408,10 +388,13 @@ p.item-length {
 article .lookbooks {
   &-btn {
     display: flex;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
+    @media screen and (min-width:1024px) {
+      margin-bottom: 50px;
+    }
     h3 {
       text-align: center;
-      margin-top: 10px;
+      margin-top: 15px;
       @media screen and (min-width:1024px) {
         font-size: 300%;
       }
@@ -499,6 +482,11 @@ article .lookbooks {
 
 // News 
 .news {
+  &-images {
+    @media screen and (min-width:1024px) {
+      display: flex;
+    }
+  }
   &-image {
     display: flex;
     align-items: flex-start;
@@ -512,32 +500,32 @@ article .lookbooks {
     }
     &-w2 {
       display: flex;
-      align-items: flex-start;
-      flex-wrap: wrap;
       justify-content: space-between;
       margin: 30px 0;
       img {
         align-items: flex-start;
         width: 49%;
       }
-      @media screen and (min-width:1024px) {
-        width: 60%;
-        margin: 30px 0;
-        img {
-          padding-right: 10px;
-        }
-      }
     }
   }
-  &-info{
-    &-top{
-      border-bottom: 1px solid #4a4a4a;
+  &-info {
+    &-top {
+      margin-bottom: 60px;
+      @media screen and (min-width:1024px) {
+        margin-bottom: 100px;
+      }
       h3 {
-        font-size: 120%;
+        font-size: 200%;
         font-style: italic;
+        @media screen and (min-width:1024px) {
+          font-size: 300%;
+        }
       }
       p {
-        margin: 10px 0  30px;
+        margin: 10px 0 30px;
+        @media screen and (min-width:1024px) {
+          margin: 40px 0;
+        }
       }
     }
     &-second {
@@ -547,6 +535,10 @@ article .lookbooks {
       }
     }
   }
+}
+
+.link-more {
+
 }
 
 // footer 

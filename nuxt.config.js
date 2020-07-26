@@ -30,6 +30,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/axios',
+    '~/plugins/api'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -46,6 +48,7 @@ export default {
     '@nuxtjs/axios',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
+    '@nuxtjs/axios',
   ],
   /*
   ** Axios module configuration

@@ -2,33 +2,19 @@
   <div class="child-content">
     <article class="article">
       <h2 class="title">News</h2>
-     <div class="news-image">
-        <img src="../assets/images/news/2020-02/01.jpg" alt="">
-        <img src="../assets/images/news/2020-02/02.jpg" alt="">
-        <img src="../assets/images/news/2020-02/03.jpg" alt="">
-        <img src="../assets/images/news/2020-02/04.jpg" alt="">
-        <img src="../assets/images/news/2020-02/05.jpg" alt="">
-        <img src="../assets/images/news/2020-02/06.jpg" alt="">
-     </div>
-      <div class="news-info-top">
-        <h3>2020.2.23<br> 『スーパーチャイナ at 壬生モクレン』に参加しました。</h3>
-        <p>
-          スーパーチャイナへお越しいただいたみなさま、気にしてくださったみなさま、本当にありがとうございました。<br>
-          ラララチャイナは年内にパワーアップして必ず帰ってきますので、これからも応援よろしくお願いいたします！
-        </p>
-      </div>
-      <div class="news-info-second">
-        <div class="news-image-w2">
-          <img src="../assets/images/news/2020-img01.jpg" alt="">
-          <img src="../assets/images/news/2020-img02.jpg" alt="">
+      <div v-for="news in allNews" :key="news.id" class="news-info-top">
+        <h3>{{ news.date }}</h3>
+        <div class="news-images">
+          <div v-if="news.image">
+            <img :src="news.image.url" class="news-image-w2" alt="image" />
+          </div>
+          <div v-if="news.image2">
+            <img :src="news.image2.url" class="news-image-w2" alt="image" />
+          </div>
         </div>
-        <p>
-          2020.2.21-2.22<br>『スーパーチャイナ at 壬生モクレン』<br>
-          日時：2020.2.21(金)-2.22(土) 13:00-23:00<br>
-          場所 : 〒604-8832<br>京都府京都市中京区壬生下溝町60-15<br>
-          壬生モクレン(Instagram : <a href="https://www.instagram.com/mibu_mokuren/?hl=ja" target="_blank" style="color: #ED0C0C">@mibu_mokuren</a>)
-        </p>
+        <span class="news-body" v-html="news.body" />
       </div>
+      <!-- <nuxt-link to="/past_exhibition" class="link-more">⇒</nuxt-link> -->
     </article>
   </div>
 </template>
@@ -36,10 +22,21 @@
 <script>
   export default {
     name: "news",
+    data () {
+      return {
+        allNews: []
+      }
+    },
     head() {
       return {
-        title: 'News ||'
+        title: 'News /'
       }
+    },
+    mounted () {
+      this.$api.getAllNews()
+        .then(response => {
+          this.allNews = response;
+        });
     }
   }
 </script>

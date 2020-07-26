@@ -2,14 +2,6 @@
   <div>
     <div class="hero-image"></div>
     <article class="article">
-      <h3 class="title">News</h3>
-      <div class="top-news-item">
-        <nuxt-link to="/news" class="link">
-        2020.2.23『スーパーチャイナ at 壬生モクレン』に参加しました。 
-        </nuxt-link>
-      </div>
-    </article>
-    <article class="article">
       <h3 class="title">Look-Book</h3>
       <div class="top-lookbooks-contents">
         <div class="top-lookbooks-btn">
@@ -29,5 +21,4 @@
 export default {
   name: 'home'
 }
-
 </script>

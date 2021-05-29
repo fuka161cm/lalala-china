@@ -5,7 +5,7 @@
       <div class="lookbook">
         <div class="lookbook look-block">
             <div class="look-item">
-                <img src="../../assets/images/lookbook/2021ss_02/01.jpg" alt="">
+                <img src="../../assets/images/lookbook/2021ss_02/09.jpg" alt="">
             </div>
             <div class="look-item">
                 <img src="../../assets/images/lookbook/2021ss_02/02.jpg" alt="">
@@ -17,6 +17,9 @@
                 <img src="../../assets/images/lookbook/2021ss_02/04.jpg" alt="">
             </div>
             <div class="look-item">
+                <img src="../../assets/images/lookbook/2021ss_02/08.jpg" alt="">
+            </div>
+            <div class="look-item">
                 <img src="../../assets/images/lookbook/2021ss_02/05.jpg" alt="">
             </div>
             <div class="look-item">
@@ -26,10 +29,7 @@
                 <img src="../../assets/images/lookbook/2021ss_02/07.jpg" alt="">
             </div>
             <div class="look-item">
-                <img src="../../assets/images/lookbook/2021ss_02/08.jpg" alt="">
-            </div>
-            <div class="look-item">
-                <img src="../../assets/images/lookbook/2021ss_02/09.jpg" alt="">
+                <img src="../../assets/images/lookbook/2021ss_02/01.jpg" alt="">
             </div>
         </div>
       </div>

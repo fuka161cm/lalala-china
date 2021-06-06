@@ -2,27 +2,25 @@
   <div class="child-content">
     <article class="article">
       <h2 class="title">Look-Book</h2>
-      <h3 class="title">2021</h3>
       <div class="lookbooks-contents">
         <div class="lookbooks-btn">
           <nuxt-link to="/lookbook/2021ss_01" class="link">
             <img src="../assets/images/lookbook/btn/2021ss_01.jpg" alt="">
-            <!-- <h3 class="title">vivit</h3> -->
+            <h3 class="title">vivit</h3>
           </nuxt-link>
         </div>
         <div class="lookbooks-btn">
           <nuxt-link to="/lookbook/2021ss_02" class="link">
             <img src="../assets/images/lookbook/btn/2021ss_02.jpg" alt="">
-            <!-- <h3 class="title">linen</h3> -->
+            <h3 class="title">linen</h3>
           </nuxt-link>
         </div>
         <div class="lookbooks-btn">
           <nuxt-link to="/lookbook/2021ss_03" class="link">
             <img src="../assets/images/lookbook/btn/2021ss_03.jpg" alt="">
-            <!-- <h3 class="title">はんそで</h3> -->
+            <h3 class="title">はんそで</h3>
           </nuxt-link>
         </div>
-        <h3 class="title">2020</h3>
         <div class="lookbooks-btn">
           <nuxt-link to="/lookbook/portrait" class="link">
             <img src="../assets/images/lookbook/btn/portrait-btn.jpg" alt="">

@@ -23,11 +23,11 @@
 
         <div class="navbar-menu" :class="{ 'is-active': isActive }">
           <div class="navbar-start">
-            <nuxt-link  @click.native="closeNav()" class="navbar-item" to="/">Home</nuxt-link>
-            <nuxt-link  @click.native="closeNav()" class="navbar-item" to="/news">News</nuxt-link>
-            <nuxt-link  @click.native="closeNav()" class="navbar-item" to="/lookbooks">Look-Book</nuxt-link>
-            <nuxt-link  @click.native="closeNav()" class="navbar-item" to="/gallery">Gallery</nuxt-link>
-            <nuxt-link  @click.native="closeNav()" class="navbar-item" to="/about">About</nuxt-link>
+            <nuxt-link  @click.native="closeNav()" class="navbar-item" to="/">ホーム</nuxt-link>
+            <nuxt-link  @click.native="closeNav()" class="navbar-item" to="/news">ニュース</nuxt-link>
+            <nuxt-link  @click.native="closeNav()" class="navbar-item" to="/lookbooks">ルックブック</nuxt-link>
+            <nuxt-link  @click.native="closeNav()" class="navbar-item" to="/gallery">ギャラリー</nuxt-link>
+            <nuxt-link  @click.native="closeNav()" class="navbar-item" to="/about">アバウト</nuxt-link>
           </div>
         </div>
       </nav>

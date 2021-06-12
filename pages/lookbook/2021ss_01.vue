@@ -14,7 +14,7 @@
             <div class="look-item">
                 <img src="../../assets/images/lookbook/2021ss_01/03.jpg" alt="">
             </div>
-            <div class="look-item">
+            <div class="look-item frame">
                 <img src="../../assets/images/lookbook/2021ss_01/04.jpg" alt="">
             </div>
             <div class="look-item">
@@ -26,13 +26,13 @@
             <div class="look-item">
                 <img src="../../assets/images/lookbook/2021ss_01/07.jpg" alt="">
             </div>
-            <div class="look-item">
+            <div class="look-item frame">
                 <img src="../../assets/images/lookbook/2021ss_01/08.jpg" alt="">
             </div>
             <div class="look-item">
                 <img src="../../assets/images/lookbook/2021ss_01/09.jpg" alt="">
             </div>
-            <div class="look-item">
+            <div class="look-item frame">
                 <img src="../../assets/images/lookbook/2021ss_01/10.jpg" alt="">
             </div>
             <div class="look-item">

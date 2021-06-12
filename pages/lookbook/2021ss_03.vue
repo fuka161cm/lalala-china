@@ -5,7 +5,7 @@
       <h3 class="title is-5 sub-title">はんそでのラララチャイナ</h3>
       <div class="lookbook">
         <div class="lookbook look-block">
-            <div class="look-item">
+            <div class="look-item ">
                 <img src="../../assets/images/lookbook/2021ss_03/01.jpg" alt="">
             </div>
             <div class="look-item">
@@ -23,7 +23,7 @@
             <div class="look-item">
                 <img src="../../assets/images/lookbook/2021ss_03/06.jpg" alt="">
             </div>
-            <div class="look-item">
+            <div class="look-item frame">
                 <img src="../../assets/images/lookbook/2021ss_03/07.jpg" alt="">
             </div>
             <div class="look-item">
@@ -35,11 +35,9 @@
             <div class="look-item">
                 <img src="../../assets/images/lookbook/2021ss_03/10.jpg" alt="">
             </div>
-            <div class="look-item">
+            <!-- <div class="side-by-side"> -->
+            <div class="look-item frame">
                 <img src="../../assets/images/lookbook/2021ss_03/11.jpg" alt="">
-            </div>
-            <div class="look-item">
-                <img src="../../assets/images/lookbook/2021ss_03/12.jpg" alt="">
             </div>
             <div class="look-item">
                 <img src="../../assets/images/lookbook/2021ss_03/13.jpg" alt="">
@@ -59,7 +57,7 @@
              <div class="look-item">
                 <img src="../../assets/images/lookbook/2021ss_03/18.jpg" alt="">
             </div>
-             <div class="look-item">
+             <div class="look-item frame">
                 <img src="../../assets/images/lookbook/2021ss_03/19.jpg" alt="">
             </div>
             

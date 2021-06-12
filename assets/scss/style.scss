@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
 
 $key_color: #ed0c0c;
 $basic_color: #4A4A4A;
-$basic_font: 'Varela Round', sans-serif, 'Helvetica Neue', Helvetica;
+$basic_font: 'Sawarabi Gothic', sans-serif, 'Helvetica Neue', Helvetica;
 
 //general
 * {
@@ -78,9 +78,10 @@ h3.title.sub-title {
 
 // header/////
 header .navbar.is-fixed-top {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.4);
   @media screen and (min-width:1024px) {
     display: flex;
+    background-color: rgba(255, 255, 255, 0);
   }
 }
 
@@ -91,9 +92,9 @@ header .navbar-item img {
 }
 
 .navbar {
-  //常に表示
+  //常に表示 ロゴ
   &-brand {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0);
     margin-left: auto;
     flex-grow: 1;
     position: relative;
@@ -119,13 +120,13 @@ header .navbar-item img {
     font-family: $basic_font;
     @media screen and (min-width:1024px) {
       position: absolute;
-      left: 25%;
+      left: 10%;
     }
   }
 
   //PC表示
   &-menu {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0);
     height: 100vh;
     font-size: 120%;
     font-weight: 600;
@@ -135,7 +136,7 @@ header .navbar-item img {
       height: auto;
     }
     &.is-active {
-      background-color: rgba(255, 255, 255, 0.6);
+      background-color: rgba(255, 255, 255, 0);
     }
   }
   &-start {
@@ -193,11 +194,17 @@ header .navbar-item img {
     @media screen and (min-width:1024px) {
       background-repeat: no-repeat;
       background-position: top 30% center;
-      margin: 150px 0 0;
+      margin: 250px 0 0;
       height: 600px;
       width: 1000px;
     }
   }
+}
+
+h1.hero-text {
+  font-size: 120%;
+  margin: 50px;
+  text-align: right;
 }
 
 .top {
@@ -372,6 +379,7 @@ p.item-length {
   align-items: center;
   flex-direction: column;
   margin: 30px 0;
+  text-align: center;
   @media screen and (min-width:1024px) {
     flex-direction: row;
     justify-content: space-between;

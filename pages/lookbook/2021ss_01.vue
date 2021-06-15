@@ -51,25 +51,27 @@
                 <img src="../../assets/images/lookbook/2021ss_01/15.jpg" alt="">
             </div>
             <div class="look-item">
-                <img src="../../assets/images/lookbook/2021ss_01/16.jpg" alt="">
+                <img src="../../assets/images/lookbook/2021ss_01/22.jpg" alt="">
+            </div>
+            <div class="side-by-side">
+              <div class="look-item">
+                  <img src="../../assets/images/lookbook/2021ss_01/20.jpg" alt="">
+              </div>
+              <div class="look-item">
+                  <img src="../../assets/images/lookbook/2021ss_01/21.jpg" alt="">
+              </div>
             </div>
             <div class="look-item">
                 <img src="../../assets/images/lookbook/2021ss_01/17.jpg" alt="">
             </div>
             <div class="look-item">
+                <img src="../../assets/images/lookbook/2021ss_01/16.jpg" alt="">
+            </div>
+            <div class="look-item frame">
                 <img src="../../assets/images/lookbook/2021ss_01/18.jpg" alt="">
             </div>
             <div class="look-item">
                 <img src="../../assets/images/lookbook/2021ss_01/19.jpg" alt="">
-            </div>
-            <div class="look-item">
-                <img src="../../assets/images/lookbook/2021ss_01/20.jpg" alt="">
-            </div>
-            <div class="look-item">
-                <img src="../../assets/images/lookbook/2021ss_01/21.jpg" alt="">
-            </div>
-            <div class="look-item">
-                <img src="../../assets/images/lookbook/2021ss_01/22.jpg" alt="">
             </div>
         </div>
       </div>

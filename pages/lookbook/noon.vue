@@ -27,13 +27,25 @@
                 <img src="../../assets/images/lookbook/noon/10.jpg" alt="">
             </div>
             <div class="look-item">
-                <img src="../../assets/images/lookbook/noon/08.jpg" alt="">
+                <img src="../../assets/images/lookbook/noon/07.jpg" alt="">
             </div>
-            <div class="look-item">
+            <div class="look-item frame">
                 <img src="../../assets/images/lookbook/noon/09.jpg" alt="">
             </div>
             <div class="look-item">
-                <img src="../../assets/images/lookbook/noon/07.jpg" alt="">
+                <img src="../../assets/images/lookbook/noon/11.jpg" alt="">
+            </div>
+            <div class="look-item">
+                <img src="../../assets/images/lookbook/noon/12.jpg" alt="">
+            </div>
+            <div class="look-item">
+                <img src="../../assets/images/lookbook/noon/13.jpg" alt="">
+            </div>
+            <div class="look-item">
+                <img src="../../assets/images/lookbook/noon/14.jpg" alt="">
+            </div>
+            <div class="look-item">
+                <img src="../../assets/images/lookbook/noon/15.jpg" alt="">
             </div>
         </div>
       </div>

@@ -19,6 +19,11 @@
           </nuxt-link>
         </div>
         <div class="lookbooks-btn">
+          <nuxt-link to="/lookbook/autumn" class="link">
+            <img src="../assets/images/lookbook/btn/autumn.jpg" alt="">
+          </nuxt-link>
+        </div>
+        <div class="lookbooks-btn">
           <nuxt-link to="/lookbook/portrait" class="link">
             <img src="../assets/images/lookbook/btn/portrait-btn.jpg" alt="">
           </nuxt-link>

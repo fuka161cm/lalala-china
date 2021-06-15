@@ -12,7 +12,7 @@
             <div class="look-item">
                 <img src="../../assets/images/lookbook/autumn/02.jpg" alt="">
             </div>
-            <div class="look-item">
+            <div class="look-item frame">
                 <img src="../../assets/images/lookbook/autumn/03.jpg" alt="">
             </div>
             <div class="look-item">

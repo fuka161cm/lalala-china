@@ -41,11 +41,11 @@ $basic_font: 'Sawarabi Gothic', sans-serif, 'Helvetica Neue', Helvetica;
 .article h2.title {
   font-family: $basic_font;
   text-align: center;
-  font-size: 300%;
+  font-size: 230%;
   margin: 10px 0 80px;
   @media screen and (min-width:1024px) {
     margin: 20px 0 80px;
-    font-size: 450%;
+    font-size: 350%;
   }
 }
 
@@ -184,6 +184,7 @@ header .navbar-item img {
 
 // home
 .hero {
+  position: relative;
   &-image {
     background-image: url(../images/top/hero-image.jpg);
     background-size: cover;
@@ -194,7 +195,7 @@ header .navbar-item img {
     @media screen and (min-width:1024px) {
       background-repeat: no-repeat;
       background-position: top 30% center;
-      margin: 250px 0 0;
+      margin: 130px 0 0;
       height: 600px;
       width: 1000px;
     }
@@ -202,9 +203,18 @@ header .navbar-item img {
 }
 
 h1.hero-text {
-  font-size: 120%;
-  margin: 50px;
+  position: absolute;
+  color: rgb(239, 244, 230);
+  right: 5%;
+  bottom: 5%;
+  font-weight: bold;
+  font-size: 170%;
   text-align: right;
+  @media screen and (min-width:1024px) {
+    font-size: 260%;
+    right: 3%;
+    top: 78%;
+  }
 }
 
 .top {

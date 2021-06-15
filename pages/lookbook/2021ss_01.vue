@@ -50,6 +50,27 @@
             <div class="look-item">
                 <img src="../../assets/images/lookbook/2021ss_01/15.jpg" alt="">
             </div>
+            <div class="look-item">
+                <img src="../../assets/images/lookbook/2021ss_01/16.jpg" alt="">
+            </div>
+            <div class="look-item">
+                <img src="../../assets/images/lookbook/2021ss_01/17.jpg" alt="">
+            </div>
+            <div class="look-item">
+                <img src="../../assets/images/lookbook/2021ss_01/18.jpg" alt="">
+            </div>
+            <div class="look-item">
+                <img src="../../assets/images/lookbook/2021ss_01/19.jpg" alt="">
+            </div>
+            <div class="look-item">
+                <img src="../../assets/images/lookbook/2021ss_01/20.jpg" alt="">
+            </div>
+            <div class="look-item">
+                <img src="../../assets/images/lookbook/2021ss_01/21.jpg" alt="">
+            </div>
+            <div class="look-item">
+                <img src="../../assets/images/lookbook/2021ss_01/22.jpg" alt="">
+            </div>
         </div>
       </div>
     </article>

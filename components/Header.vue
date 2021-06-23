@@ -24,9 +24,9 @@
         <div class="navbar-menu" :class="{ 'is-active': isActive }">
           <div class="navbar-start">
             <nuxt-link  @click.native="closeNav()" class="navbar-item" to="/">ホーム</nuxt-link>
-            <nuxt-link  @click.native="closeNav()" class="navbar-item" to="/news">ニュース</nuxt-link>
             <nuxt-link  @click.native="closeNav()" class="navbar-item" to="/lookbooks">ルックブック</nuxt-link>
             <nuxt-link  @click.native="closeNav()" class="navbar-item" to="/gallery">ギャラリー</nuxt-link>
+            <nuxt-link  @click.native="closeNav()" class="navbar-item" to="/news">ニュース</nuxt-link>
             <nuxt-link  @click.native="closeNav()" class="navbar-item" to="/about">アバウト</nuxt-link>
           </div>
         </div>

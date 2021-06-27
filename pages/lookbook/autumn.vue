@@ -3,7 +3,6 @@
     <article class="article">
       <h2 class="title is-2 sub-title">2020</h2>
       <h3 class="title is-5 sub-title">autumn</h3>
-
       <div class="lookbook">
         <div class="lookbook look-block">
             <div class="look-item">
@@ -36,22 +35,6 @@
         </div>
       </div>
     </article>
-    <article class="article">
-        <div class="lookbooks-table">
-            <div class="lookbooks-btn">
-                <nuxt-link to="/lookbook/noon" class="link">
-                    <img src="../../assets/images/lookbook/btn/noon-btn.jpg" alt="">
-                    <h3 class="title">Noon</h3>
-                </nuxt-link>
-            </div>
-            <div class="lookbooks-btn">
-            <nuxt-link to="/lookbook/night" class="link">
-                    <img src="../../assets/images/lookbook/btn/night-btn.jpg" alt="">
-                    <h3 class="title">Night</h3>
-            </nuxt-link>
-            </div>
-        </div>
-   </article>
   </div>
 </template>
 

@@ -61,7 +61,7 @@
     name: "portrait",
     head() {
       return {
-        title: 'portrait / lookBook /'
+        title: 'portrait / lookbook /'
       }
     }
   }

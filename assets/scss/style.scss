@@ -41,11 +41,11 @@ $basic_font: 'Sawarabi Gothic', sans-serif, 'Helvetica Neue', Helvetica;
 .article h2.title {
   font-family: $basic_font;
   text-align: center;
-  font-size: 230%;
+  font-size: 180%;
   margin: 10px 0 80px;
   @media screen and (min-width:1024px) {
     margin: 20px 0 80px;
-    font-size: 350%;
+    font-size: 180%;
   }
 }
 

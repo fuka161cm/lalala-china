@@ -72,7 +72,7 @@
     name: "2021ss_03",
     head() {
       return {
-        title: '2021SS / Look-book /'
+        title: '2021SS / lookbook /'
       }
     }
   }

@@ -1,7 +1,7 @@
 <template>
   <div class="child-content">
     <article class="article">
-      <h2 class="title">ルックブック</h2>
+      <h2 class="title">lookbook</h2>
         <div class="lookbooks-btn">
           <nuxt-link to="/lookbook/2021ss_01" class="link">
             <img src="../assets/images/lookbook/btn/2021ss_01.jpg" alt="">
@@ -46,7 +46,7 @@
     name: "lookbook",
     head() {
       return {
-        title: 'Look-Book /'
+        title: 'lookbook /'
       }
     }
   }

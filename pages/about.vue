@@ -1,7 +1,7 @@
 <template>
   <div class="child-content">
     <article class="article">
-      <h2 class="title heading-title">About</h2>
+      <h2 class="title heading-title">about</h2>
       <img src="../assets/images/about/main-img.jpg" /> 
       <div class="intro">
         <p>
@@ -66,7 +66,7 @@
     name: "about",
     head() {
       return {
-        title: 'About /'
+        title: 'about /'
       }
     }
   }

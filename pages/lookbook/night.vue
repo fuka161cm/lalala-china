@@ -81,7 +81,7 @@
     name: "night",
     head() {
       return {
-        title: 'Night / Look-book /'
+        title: 'night / lookbook /'
       }
     }
   }

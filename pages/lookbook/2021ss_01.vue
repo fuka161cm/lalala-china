@@ -76,7 +76,7 @@
         </div>
       </div>
     </article>
-   <article class="article">
+   <!-- <article class="article">
         <div class="lookbooks-table">
             <div class="lookbooks-btn">
                 <nuxt-link to="/lookbook/portrait" class="link">
@@ -91,7 +91,7 @@
             </nuxt-link>
             </div>
         </div>
-   </article>
+   </article> -->
   </div>
 </template>
 
@@ -100,7 +100,7 @@
     name: "2021ss_01",
     head() {
       return {
-        title: '2021SS / Look-book /'
+        title: '2021SS / lookbook /'
       }
     }
   }

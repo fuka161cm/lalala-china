@@ -1,7 +1,7 @@
 <template>
   <div class="child-content">
     <article class="article">
-      <h2 class="title">Gallery</h2>
+      <h2 class="title">gallery</h2>
       <div class="thumbnail-item">
         <div v-for="gallery in allGallery" :key="gallery.id">
           <div v-if="gallery.pic">
@@ -23,7 +23,7 @@
     },
     head() {
       return {
-        title: 'Gallery /'
+        title: 'gallery /'
       }
     },
     mounted () {

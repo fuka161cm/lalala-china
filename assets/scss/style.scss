@@ -172,8 +172,7 @@ header .navbar-item img {
 .navbar-item {
   @media screen and (min-width:1024px) {
     margin: 20px 20px;
-          position: absolute;
-          left: 10%;
+    left: 10%;
   }
   &.nuxt-link-exact-active {
     color: $key_color;

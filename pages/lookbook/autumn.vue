@@ -1,8 +1,7 @@
 <template>
   <div class="child-content">
     <article class="article">
-      <h2 class="title is-2 sub-title">2020</h2>
-      <h3 class="title is-5 sub-title">autumn</h3>
+      <h2 class="title is-2 sub-title">autumn</h2>
       <div class="lookbook">
         <div class="lookbook look-block">
             <div class="look-item">

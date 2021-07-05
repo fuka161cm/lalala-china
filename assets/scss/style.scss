@@ -181,7 +181,6 @@ header .navbar-item img {
 
 // home
 .hero {
-  position: relative;
   &-image {
     background-image: url(../images/top/hero-image.jpg);
     background-size: cover;
@@ -196,21 +195,6 @@ header .navbar-item img {
       height: 600px;
       width: 1000px;
     }
-  }
-}
-
-h1.hero-text {
-  position: absolute;
-  color: rgb(239, 244, 230);
-  right: 5%;
-  bottom: 10%;
-  font-weight: bold;
-  font-size: 170%;
-  text-align: right;
-  @media screen and (min-width:1024px) {
-    font-size: 260%;
-    right: 3%;
-    top: 78%;
   }
 }
 
